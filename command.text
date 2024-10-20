@@ -1,0 +1,26 @@
+#สร้างโฟลเดอร ์ airflow
+#และสร้างโฟลเดอร ์ dags, logs, plugins ในโฟลเดอร ์ airflow
+#./dags - you can put your DAG files here.
+#./logs - contains logs from task execution and scheduler.
+#./plugins - you can put your custom plugins here.
+#./config - contains the configuration for the airflow webserver and scheduler.
+
+##step0
+# Example: Store the current user's SID in a .env file
+$SID = (New-Object System.Security.Principal.NTAccount($env:USERNAME)).Translate([System.Security.Principal.SecurityIdentifier]).Value
+$envContent = "AIRFLOW_SID=$SID"
+Set-Content -Path .env -Value $envContent
+
+dir
+
+#step1
+docker-compose up airflow-init
+
+#step2
+docker-compose up -d
+docker-compose up
+
+#step3
+docker-compose down
+
+docker ps --all

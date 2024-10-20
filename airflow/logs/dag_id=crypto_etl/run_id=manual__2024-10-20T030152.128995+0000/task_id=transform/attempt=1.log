@@ -1,0 +1,32 @@
+[2024-10-20T03:01:56.528+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: crypto_etl.transform manual__2024-10-20T03:01:52.128995+00:00 [queued]>
+[2024-10-20T03:01:56.542+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: crypto_etl.transform manual__2024-10-20T03:01:52.128995+00:00 [queued]>
+[2024-10-20T03:01:56.543+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2024-10-20T03:01:56.563+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): transform> on 2024-10-20 03:01:52.128995+00:00
+[2024-10-20T03:01:56.576+0000] {standard_task_runner.py:57} INFO - Started process 126 to run task
+[2024-10-20T03:01:56.579+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'crypto_etl', 'transform', 'manual__2024-10-20T03:01:52.128995+00:00', '--job-id', '219', '--raw', '--subdir', 'DAGS_FOLDER/crypto_etl_dag.py', '--cfg-path', '/tmp/tmp96pr1sb1']
+[2024-10-20T03:01:56.581+0000] {standard_task_runner.py:85} INFO - Job 219: Subtask transform
+[2024-10-20T03:01:56.646+0000] {task_command.py:416} INFO - Running <TaskInstance: crypto_etl.transform manual__2024-10-20T03:01:52.128995+00:00 [running]> on host c03d178edf0e
+[2024-10-20T03:01:56.753+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='crypto_etl' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2024-10-20T03:01:52.128995+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-20T03:01:52.128995+00:00'
+[2024-10-20T03:01:56.781+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/crypto_etl_dag.py", line 31, in transform_data
+    df.to_csv(output_path, index=False)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 3772, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/formats/format.py", line 1186, in to_csv
+    csv_formatter.save()
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/formats/csvs.py", line 240, in save
+    with get_handle(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/common.py", line 737, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/common.py", line 600, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '/test-***/data'
+[2024-10-20T03:01:56.802+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=crypto_etl, task_id=transform, execution_date=20241020T030152, start_date=20241020T030156, end_date=20241020T030156
+[2024-10-20T03:01:56.824+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 219 for task transform (Cannot save file into a non-existent directory: '/test-***/data'; 126)
+[2024-10-20T03:01:56.875+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-10-20T03:01:56.906+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

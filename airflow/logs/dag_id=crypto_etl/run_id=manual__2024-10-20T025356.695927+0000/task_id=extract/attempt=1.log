@@ -1,0 +1,13 @@
+[2024-10-20T02:53:58.845+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: crypto_etl.extract manual__2024-10-20T02:53:56.695927+00:00 [queued]>
+[2024-10-20T02:53:58.855+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: crypto_etl.extract manual__2024-10-20T02:53:56.695927+00:00 [queued]>
+[2024-10-20T02:53:58.856+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2024-10-20T02:53:58.872+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract> on 2024-10-20 02:53:56.695927+00:00
+[2024-10-20T02:53:58.879+0000] {standard_task_runner.py:57} INFO - Started process 238 to run task
+[2024-10-20T02:53:58.883+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'crypto_etl', 'extract', 'manual__2024-10-20T02:53:56.695927+00:00', '--job-id', '198', '--raw', '--subdir', 'DAGS_FOLDER/crypto_etl_dag.py', '--cfg-path', '/tmp/tmpgp2mw67w']
+[2024-10-20T02:53:58.884+0000] {standard_task_runner.py:85} INFO - Job 198: Subtask extract
+[2024-10-20T02:53:58.937+0000] {task_command.py:416} INFO - Running <TaskInstance: crypto_etl.extract manual__2024-10-20T02:53:56.695927+00:00 [running]> on host 6fb9dd1ce83c
+[2024-10-20T02:53:59.029+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='crypto_etl' AIRFLOW_CTX_TASK_ID='extract' AIRFLOW_CTX_EXECUTION_DATE='2024-10-20T02:53:56.695927+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-20T02:53:56.695927+00:00'
+[2024-10-20T02:53:59.519+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-10-20T02:53:59.537+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=crypto_etl, task_id=extract, execution_date=20241020T025356, start_date=20241020T025358, end_date=20241020T025359
+[2024-10-20T02:53:59.618+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-10-20T02:53:59.657+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
