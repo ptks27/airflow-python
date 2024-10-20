@@ -112,6 +112,7 @@ services:
       POSTGRES_DB: recalls_db
     volumes:
       - recalls-db-volume:/var/lib/postgresql/data
+      
 
   redis:
     image: redis:latest
