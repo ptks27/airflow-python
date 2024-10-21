@@ -1230,3 +1230,24 @@
 [2024-10-21T15:48:33.870+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:48:33.869+0000] {dag.py:2941} INFO - Sync 1 DAGs
 [2024-10-21T15:48:33.930+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:48:33.930+0000] {dag.py:3722} INFO - Setting next_dagrun for covid_etl to 2024-10-21T00:00:00+00:00, run_after=2024-10-22T00:00:00+00:00
 [2024-10-21T15:48:33.973+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/covid_dag.py took 1.470 seconds
+[2024-10-21T15:49:04.175+0000] {processor.py:157} INFO - Started process (PID=539) to work on /opt/airflow/dags/covid_dag.py
+[2024-10-21T15:49:04.177+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/covid_dag.py for tasks to queue
+[2024-10-21T15:49:04.182+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:49:04.181+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/covid_dag.py
+[2024-10-21T15:49:05.494+0000] {processor.py:839} INFO - DAG(s) dict_keys(['covid_etl']) retrieved from /opt/airflow/dags/covid_dag.py
+[2024-10-21T15:49:05.540+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:49:05.537+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-10-21T15:49:05.606+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:49:05.605+0000] {dag.py:3722} INFO - Setting next_dagrun for covid_etl to 2024-10-21T00:00:00+00:00, run_after=2024-10-22T00:00:00+00:00
+[2024-10-21T15:49:05.654+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/covid_dag.py took 1.485 seconds
+[2024-10-21T15:49:35.935+0000] {processor.py:157} INFO - Started process (PID=610) to work on /opt/airflow/dags/covid_dag.py
+[2024-10-21T15:49:35.937+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/covid_dag.py for tasks to queue
+[2024-10-21T15:49:35.940+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:49:35.940+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/covid_dag.py
+[2024-10-21T15:49:36.884+0000] {processor.py:839} INFO - DAG(s) dict_keys(['covid_etl']) retrieved from /opt/airflow/dags/covid_dag.py
+[2024-10-21T15:49:36.921+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:49:36.920+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-10-21T15:49:36.964+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:49:36.963+0000] {dag.py:3722} INFO - Setting next_dagrun for covid_etl to 2024-10-21T00:00:00+00:00, run_after=2024-10-22T00:00:00+00:00
+[2024-10-21T15:49:37.003+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/covid_dag.py took 1.074 seconds
+[2024-10-21T15:50:07.801+0000] {processor.py:157} INFO - Started process (PID=668) to work on /opt/airflow/dags/covid_dag.py
+[2024-10-21T15:50:07.802+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/covid_dag.py for tasks to queue
+[2024-10-21T15:50:07.807+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:50:07.806+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/covid_dag.py
+[2024-10-21T15:50:08.548+0000] {processor.py:839} INFO - DAG(s) dict_keys(['covid_etl']) retrieved from /opt/airflow/dags/covid_dag.py
+[2024-10-21T15:50:08.585+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:50:08.583+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-10-21T15:50:08.624+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:50:08.624+0000] {dag.py:3722} INFO - Setting next_dagrun for covid_etl to 2024-10-21T00:00:00+00:00, run_after=2024-10-22T00:00:00+00:00
+[2024-10-21T15:50:08.658+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/covid_dag.py took 0.863 seconds

@@ -193,3 +193,24 @@
 [2024-10-21T15:48:33.536+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:48:33.534+0000] {dag.py:2941} INFO - Sync 1 DAGs
 [2024-10-21T15:48:33.611+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:48:33.611+0000] {dag.py:3722} INFO - Setting next_dagrun for crypto_tickers1_etl to 2024-10-01T00:00:00+00:00, run_after=2024-10-02T00:00:00+00:00
 [2024-10-21T15:48:33.684+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/25_6421605435_dag.py took 1.479 seconds
+[2024-10-21T15:49:04.156+0000] {processor.py:157} INFO - Started process (PID=538) to work on /opt/airflow/dags/25_6421605435_dag.py
+[2024-10-21T15:49:04.159+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/25_6421605435_dag.py for tasks to queue
+[2024-10-21T15:49:04.163+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:49:04.163+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/25_6421605435_dag.py
+[2024-10-21T15:49:05.459+0000] {processor.py:839} INFO - DAG(s) dict_keys(['crypto_tickers1_etl']) retrieved from /opt/airflow/dags/25_6421605435_dag.py
+[2024-10-21T15:49:05.493+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:49:05.492+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-10-21T15:49:05.548+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:49:05.547+0000] {dag.py:3722} INFO - Setting next_dagrun for crypto_tickers1_etl to 2024-10-15T00:00:00+00:00, run_after=2024-10-16T00:00:00+00:00
+[2024-10-21T15:49:05.607+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/25_6421605435_dag.py took 1.457 seconds
+[2024-10-21T15:49:35.920+0000] {processor.py:157} INFO - Started process (PID=609) to work on /opt/airflow/dags/25_6421605435_dag.py
+[2024-10-21T15:49:35.922+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/25_6421605435_dag.py for tasks to queue
+[2024-10-21T15:49:35.927+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:49:35.926+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/25_6421605435_dag.py
+[2024-10-21T15:49:36.881+0000] {processor.py:839} INFO - DAG(s) dict_keys(['crypto_tickers1_etl']) retrieved from /opt/airflow/dags/25_6421605435_dag.py
+[2024-10-21T15:49:36.921+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:49:36.920+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-10-21T15:49:36.965+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:49:36.965+0000] {dag.py:3722} INFO - Setting next_dagrun for crypto_tickers1_etl to 2024-10-21T00:00:00+00:00, run_after=2024-10-22T00:00:00+00:00
+[2024-10-21T15:49:37.006+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/25_6421605435_dag.py took 1.093 seconds
+[2024-10-21T15:50:07.787+0000] {processor.py:157} INFO - Started process (PID=667) to work on /opt/airflow/dags/25_6421605435_dag.py
+[2024-10-21T15:50:07.790+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/25_6421605435_dag.py for tasks to queue
+[2024-10-21T15:50:07.794+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:50:07.793+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/25_6421605435_dag.py
+[2024-10-21T15:50:08.535+0000] {processor.py:839} INFO - DAG(s) dict_keys(['crypto_tickers1_etl']) retrieved from /opt/airflow/dags/25_6421605435_dag.py
+[2024-10-21T15:50:08.571+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:50:08.570+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-10-21T15:50:08.611+0000] {logging_mixin.py:154} INFO - [2024-10-21T15:50:08.611+0000] {dag.py:3722} INFO - Setting next_dagrun for crypto_tickers1_etl to 2024-10-21T00:00:00+00:00, run_after=2024-10-22T00:00:00+00:00
+[2024-10-21T15:50:08.644+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/25_6421605435_dag.py took 0.874 seconds
