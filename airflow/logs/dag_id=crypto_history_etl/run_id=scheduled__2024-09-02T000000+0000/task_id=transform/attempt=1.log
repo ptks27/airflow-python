@@ -1,0 +1,22 @@
+[2024-10-21T02:28:24.657+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: crypto_history_etl.transform scheduled__2024-09-02T00:00:00+00:00 [queued]>
+[2024-10-21T02:28:24.681+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: crypto_history_etl.transform scheduled__2024-09-02T00:00:00+00:00 [queued]>
+[2024-10-21T02:28:24.682+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2024-10-21T02:28:24.711+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): transform> on 2024-09-02 00:00:00+00:00
+[2024-10-21T02:28:24.728+0000] {standard_task_runner.py:57} INFO - Started process 154 to run task
+[2024-10-21T02:28:24.733+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'crypto_history_etl', 'transform', 'scheduled__2024-09-02T00:00:00+00:00', '--job-id', '632', '--raw', '--subdir', 'DAGS_FOLDER/crypto_etl_dag.py', '--cfg-path', '/tmp/tmpiutu3nv8']
+[2024-10-21T02:28:24.753+0000] {standard_task_runner.py:85} INFO - Job 632: Subtask transform
+[2024-10-21T02:28:24.879+0000] {task_command.py:416} INFO - Running <TaskInstance: crypto_history_etl.transform scheduled__2024-09-02T00:00:00+00:00 [running]> on host 3c07e08c9ecc
+[2024-10-21T02:28:25.016+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='crypto_history_etl' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2024-09-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-02T00:00:00+00:00'
+[2024-10-21T02:28:25.041+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/crypto_etl_dag.py", line 24, in transform_data
+    prices = data['prices']
+KeyError: 'prices'
+[2024-10-21T02:28:25.060+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=crypto_history_etl, task_id=transform, execution_date=20240902T000000, start_date=20241021T022824, end_date=20241021T022825
+[2024-10-21T02:28:25.087+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 632 for task transform ('prices'; 154)
+[2024-10-21T02:28:25.139+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-10-21T02:28:25.269+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
